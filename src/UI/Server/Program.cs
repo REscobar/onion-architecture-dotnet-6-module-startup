@@ -1,8 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
-builder.Host.UseLamar(registry => { registry.IncludeRegistry<UiServiceRegistry>(); });
 
 var app = builder.Build();
 //Configure the HTTP request pipeline.
